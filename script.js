@@ -447,13 +447,13 @@ class PortfolioApp {
     initTypingEffects() {
         if (window.TypingEffect) {
             // Hero section typing effects
-            new TypingEffect('greeting', "Hi, I'm", 1000);
+            new TypingEffect('greeting', "Hi, I'm mohammed sabith", 100);
             setTimeout(() => {
-                new TypingEffect('title', 'Full Stack Developer & Problem Solver', 2500);
-            }, 1500);
+                new TypingEffect('title', 'Full Stack Developer & Problem Solver', 100);
+            }, 1000);
             setTimeout(() => {
-                new TypingEffect('tagline', 'Turning ideas into scalable software solutions. Passionate about AI, Cybersecurity, and Smart Tech.', 4000);
-            }, 3000);
+                new TypingEffect('tagline', 'Turning ideas into scalable software solutions. Passionate about AI, Cybersecurity, and Smart Tech.', 100);
+            }, 100);
             
             // Project typing effects
             const projectTypings = document.querySelectorAll('.typing-project');
