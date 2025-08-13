@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Sabith | Full Stack Developer | AI & Cybersecurity Enthusiast</title>
+    <meta name="description" content="Full Stack Developer passionate about AI, Cybersecurity, and Smart Tech. Turning ideas into scalable software solutions.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+    
+    <!-- Particle Background -->
+    <canvas id="starfield" class="starfield-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="glitch-text" data-text="Mohammed sabith">Mohammed sabith</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="typing-text" id="greeting"></span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="glitch-text" data-text="Mohd Sabith">Mohd Sabith</span>
+                </h1>
+                <h2 class="hero-title">
+                    <span class="typing-text" id="title"></span>
+                </h2>
+                <p class="hero-tagline">
+                    <span class="typing-text" id="tagline"></span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Explore My Projects
+                    </a>
+                    <a href="C:\Users\Nitro\Downloads\Mohammed sabith (2).pdf" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-image">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="About Me">About Me</span>
+            </h2>
+            <div class="about-content">
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Education</h3>
+                            <p>Currently pursuing B.E. in Computer Science at PA College of Engineering, Mangalore</p>
+                            <span class="highlight">CGPA: 8.9</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Languages</h3>
+                            <p>English, Hindi, Tamil, Telugu, Basic Japanese</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Interests</h3>
+                            <p>AI-based systems, automation, security, innovation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Learning</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="Skills Arsenal">Skills Arsenal</span>
+            </h2>
+            <div class="skills-container">
+                <div class="skills-radar">
+                    <canvas id="skillsRadar"></canvas>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="90">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item" data-skill="80">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item" data-skill="75">
+                                <i class="fas fa-code"></i>
+                                <span>C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="95">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item" data-skill="90">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item" data-skill="80">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Concepts</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="90">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Cybersecurity</span>
+                            </div>
+                            <div class="skill-item" data-skill="80">
+                                <i class="fas fa-brain"></i>
+                                <span>AI</span>
+                            </div>
+                            <div class="skill-item" data-skill="75">
+                                <i class="fas fa-wifi"></i>
+                                <span>IoT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="Certifications">Certifications</span>
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card" data-aos="flip-up">
+                    <div class="cert-hologram">
+                        <div class="cert-content">
+                            <div class="cert-icon">
+                                <i class="fab fa-harvard"></i>
+                            </div>
+                            <h3>CS50</h3>
+                            <p>Harvard University</p>
+                            <div class="cert-badge">Verified</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="cert-hologram">
+                        <div class="cert-content">
+                            <div class="cert-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h3>Python for Everybody</h3>
+                            <p>Coursera</p>
+                            <div class="cert-badge">Verified</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="cert-hologram">
+                        <div class="cert-content">
+                            <div class="cert-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>C Programming</h3>
+                            <p>SoloLearn</p>
+                            <div class="cert-badge">Verified</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="cert-hologram">
+                        <div class="cert-content">
+                            <div class="cert-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Cybersecurity Fundamentals</h3>
+                            <p>Industry Certified</p>
+                            <div class="cert-badge">Verified</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="cert-hologram">
+                        <div class="cert-content">
+                            <div class="cert-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <h3>IoT Workshop</h3>
+                            <p>Participation Certificate</p>
+                            <div class="cert-badge">Verified</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="500">
+                    <div class="cert-hologram">
+                        <div class="cert-content">
+                            <div class="cert-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Time Management</h3>
+                            <p>Professional Development</p>
+                            <div class="cert-badge">Verified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="Project Archive">Project Archive</span>
+            </h2>
+            <div class="projects-container">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">project_001.exe</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> <span class="typing-project" data-text="loading project: Wise Women in Safe Environment...">loading project: Wise Women in Safe Environment...</span>
+                            </div>
+                            <div class="project-details">
+                                <h3>Wise Women in Safe Environment</h3>
+                                <p>National level hackathon finalist (Top 5) – A comprehensive women's safety platform featuring real-time tracking, emergency alerts, and community support.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">API Integration</span>
+                                    <span class="tech-badge">Live Tracking</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge finalist">🏆 Finalist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">project_002.exe</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> <span class="typing-project" data-text="loading project: Airline Reservation DBMS...">loading project: Airline Reservation DBMS...</span>
+                            </div>
+                            <div class="project-details">
+                                <h3>Airline Reservation DBMS</h3>
+                                <p>Comprehensive database management system for airline reservations with real-time booking capabilities, passenger management, and flight scheduling.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">SQL</span>
+                                    <span class="tech-badge">Java</span>
+                                    <span class="tech-badge">DBMS</span>
+                                    <span class="tech-badge">Real-time</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge completed">✅ Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">project_003.exe</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> <span class="typing-project" data-text="loading project: Railway Accident Prevention System...">loading project: Railway Accident Prevention System...</span>
+                            </div>
+                            <div class="project-details">
+                                <h3>Railway Accident Prevention System</h3>
+                                <p>Embedded system combined with web application to detect railway track damage using IoT sensors and automatically notify authorities for immediate action.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">IoT</span>
+                                    <span class="tech-badge">Embedded Systems</span>
+                                    <span class="tech-badge">Web App</span>
+                                    <span class="tech-badge">Sensors</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge innovative">🚀 Innovative</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Download Section -->
+    <section id="cv-download" class="cv-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="Download Archive">Download Archive</span>
+            </h2>
+            <div class="cv-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <div class="terminal-title">resume_downloader.exe</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-content">
+                        <div class="terminal-line">
+                            <span class="prompt">mohd@portfolio:~$</span> <span class="typing-cv" id="cvTyping">fetch_resume();</span>
+                        </div>
+                        <div class="terminal-line" id="cvResponse" style="display: none;">
+                            <span class="success">[SUCCESS]</span> Resume located and verified
+                        </div>
+                        <div class="terminal-line" id="cvReady" style="display: none;">
+                            <span class="info">[INFO]</span> Resume ready for download
+                        </div>
+                        <div class="cv-download-btn" id="cvDownloadBtn" style="display: none;">
+                            <a href="Mohammed sabith (1).pdf" download="Mohd_Sabith_Resume.pdf" class="btn btn-primary">
+                                <i class="fas fa-file-pdf"></i>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="Initialize Contact">Initialize Contact</span>
+            </h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>mohdsabith@example.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Mohammed sabith</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>sabith-07</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                            <span class="form-bar"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <span class="form-bar"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                            <span class="form-bar"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mohd Sabith. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="particles.js"></script>
+    <script src="glitch.js"></script>
+    <script src="typing.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
