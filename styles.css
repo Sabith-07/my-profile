@@ -426,6 +426,14 @@ body {
   transform: translate(-50%, -50%);
   font-size: 8rem;
   color: var(--neon-cyan);
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--neon-cyan);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+
 }
 
 @keyframes float {
@@ -525,6 +533,7 @@ body {
   color: var(--neon-cyan);
   margin-bottom: var(--spacing-xs);
   font-family: var(--font-primary);
+  
 }
 
 .highlight {
@@ -1229,4 +1238,11 @@ body {
 ::selection {
   background: var(--neon-cyan);
   color: var(--primary-bg);
+}
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(1.1) contrast(1.1);
 }
